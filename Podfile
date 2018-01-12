@@ -8,6 +8,7 @@ target 'flicker_application' do
   # Pods for flicker_application
   pod 'Alamofire', '~> 4.5'
   pod 'AlamofireImage', '~> 3.3'
+  pod 'SwiftyJSON'
 
   target 'flicker_applicationTests' do
     inherit! :search_paths
