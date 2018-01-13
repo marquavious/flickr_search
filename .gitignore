@@ -25,10 +25,10 @@ spec/fixtures/vcr
 tmp
 
 # Examples
-examples/**/Podfile.lock
+Podfile.lock
 examples/Pods
 examples/**/Pods
-examples/RelativePathProject/RelativePathProject/RelativePathProject.xcodeproj
+flicker_application.xcworkspace
 coverage/
 .coveralls.yml
 

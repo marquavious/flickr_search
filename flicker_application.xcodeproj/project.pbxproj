@@ -156,7 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				C0E92D842003FEC70002A8F5 /* flicker_application */,
-				C03D3FB02004003D00F15A2C /* Support Files */,
 				C0E92D832003FEC70002A8F5 /* Products */,
 				B04874083F57CB5E26A249F1 /* Pods */,
 				B48DEC88B18FDD741C400BB8 /* Frameworks */,
@@ -174,6 +173,7 @@
 		C0E92D842003FEC70002A8F5 /* flicker_application */ = {
 			isa = PBXGroup;
 			children = (
+				C03D3FB02004003D00F15A2C /* Support Files */,
 				C0B8FB6220095389008E66A9 /* Extentions */,
 				C03D3FBB20040C7300F15A2C /* Confidential */,
 				C03D3FB22004007C00F15A2C /* Service Layers */,
@@ -456,7 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HGS8K6RYR7;
-				INFOPLIST_FILE = "$(SRCROOT)/Support Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/flicker_application/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.marquavious.flicker-application";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -472,7 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HGS8K6RYR7;
-				INFOPLIST_FILE = "$(SRCROOT)/Support Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/flicker_application/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.marquavious.flicker-application";
 				PRODUCT_NAME = "$(TARGET_NAME)";
