@@ -51,17 +51,21 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="i8c-hZ-Ox9"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="FG0-bv-mOf"/>
+                                </connections>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Q3W-3Y-D8J">
                                 <rect key="frame" x="8" y="20" width="304" height="30"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Te9-Hu-dh5">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Te9-Hu-dh5">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgK-Fu-Qmb">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgK-Fu-Qmb">
                                         <rect key="frame" x="256" y="0.0" width="48" height="30"/>
                                         <state key="normal" title="Search">
                                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -72,10 +76,15 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="RDY-Ie-PRw">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Q3W-3Y-D8J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5CR-ER-l89"/>
+                            <constraint firstItem="RDY-Ie-PRw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ieu-WI-zBA"/>
+                            <constraint firstItem="RDY-Ie-PRw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NL1-KV-DfT"/>
                             <constraint firstItem="ZCH-k9-g2l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NYD-AA-9Ku"/>
                             <constraint firstItem="Q3W-3Y-D8J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="b7C-Ys-FOh"/>
                             <constraint firstItem="ZCH-k9-g2l" firstAttribute="top" secondItem="Q3W-3Y-D8J" secondAttribute="bottom" constant="8" id="bBc-Jf-IN6"/>
@@ -86,6 +95,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="RDY-Ie-PRw" id="u4V-IS-iTH"/>
                         <outlet property="collectionView" destination="ZCH-k9-g2l" id="uCb-jk-EYC"/>
                         <outlet property="searchBarTextField" destination="Te9-Hu-dh5" id="1wp-3V-LQt"/>
                     </connections>

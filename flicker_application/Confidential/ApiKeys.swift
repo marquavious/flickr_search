@@ -7,7 +7,13 @@
 //
 
 import Foundation
+import UIKit
 
 struct ApiKeys{
-    static let apiKey = "fa38f39c762bdc429a6c2dd7c042f5d1"
+    static var flickrApiKey:String {
+        get {
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            return appDelegate.FlickrAPIKey
+        }
+    }
 }

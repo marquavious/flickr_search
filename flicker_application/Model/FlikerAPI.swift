@@ -1,5 +1,5 @@
 //
-//  FlikerAPI.swift
+//  FlickrAPI.swift
 //  flicker_application
 //
 //  Created by Marquavious on 1/8/18.
@@ -8,7 +8,20 @@
 
 import Foundation
 
-struct FlikerAPI{
+
+public enum FlickrParameters {
+    static func returnSearchParams(searchValue:String) -> [String:Any]{
+            return["text":searchValue,
+             "extras":"url_s",
+             "method":"flickr.photos.search",
+             "format":"json",
+             "nojsoncallback":1,
+             "api_key": ApiKeys.flickrApiKey
+        ]
+    }
+}
+
+public enum FlickrAPIDataModel {
     
     static let id = "id"
     static let owner = "owner"
@@ -23,9 +36,31 @@ struct FlikerAPI{
     static let photoHeight = "height_s"
     static let photoWidth = "width_s"
     
-
-    static let baseUrl = "https://api.flickr.com/services/rest/?method=flickr.photos.search"
 }
+
+public enum FlickrUrl {
+    static var baseUrl: URL? {
+        get {
+            var url = URLComponents()
+            url.scheme = "https"
+            url.host = "api.flickr.com"
+            url.path = "/services/rest/"
+            do {
+                return try url.asURL()
+            } catch {
+                print("Error creating url")
+                return nil
+            }
+        }
+    }
+}
+
+public enum FlickrJSON {
+    static let photo = "photo"
+    static let photos = "photos"
+}
+
+
 
 
 

@@ -27,18 +27,18 @@ class FlickrPhoto {
     var photoWidth: Int
     
     init?(_ json: JSON){
-        guard let id = json[FlikerAPI.id].string,
-        let owner = json[FlikerAPI.owner].string,
-        let secret = json[FlikerAPI.secret].string,
-        let server = json[FlikerAPI.server].string,
-        let farm = json[FlikerAPI.farm].int,
-        let title = json[FlikerAPI.title].string,
-        let isPublic = json[FlikerAPI.isPublic].int,
-        let isFamily = json[FlikerAPI.isFamily].int,
-        let isFriend = json[FlikerAPI.isFriend].int,
-        let photoUrl = json[FlikerAPI.photoUrl].url,
-        let photoHeight = json[FlikerAPI.photoHeight].string,
-        let photoWidth = json[FlikerAPI.photoWidth].string
+        guard let id = json[FlickrAPIDataModel.id].string,
+        let owner = json[FlickrAPIDataModel.owner].string,
+        let secret = json[FlickrAPIDataModel.secret].string,
+        let server = json[FlickrAPIDataModel.server].string,
+        let farm = json[FlickrAPIDataModel.farm].int,
+        let title = json[FlickrAPIDataModel.title].string,
+        let isPublic = json[FlickrAPIDataModel.isPublic].int,
+        let isFamily = json[FlickrAPIDataModel.isFamily].int,
+        let isFriend = json[FlickrAPIDataModel.isFriend].int,
+        let photoUrl = json[FlickrAPIDataModel.photoUrl].url,
+        let photoHeight = json[FlickrAPIDataModel.photoHeight].string,
+        let photoWidth = json[FlickrAPIDataModel.photoWidth].string
         else { return nil }
         
         self.id = id
@@ -51,8 +51,10 @@ class FlickrPhoto {
         self.isFamily = (isFamily == 1)
         self.isFriend = (isFriend == 1)
         self.photoUrl = photoUrl
-        self.photoHeight = Int(photoHeight)! // Fix later
-        self.photoWidth = Int(photoWidth)! // Fix later
+        
+        // If the string cannot be converted to Int, return 100 as default
+        self.photoHeight = Int(photoHeight) != nil ? Int(photoHeight)! : 100
+        self.photoWidth = Int(photoWidth) != nil ? Int(photoHeight)! : 100
     }
 
 }

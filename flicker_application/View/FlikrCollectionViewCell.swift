@@ -12,11 +12,9 @@ class FlikrCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
     
-    var flickrPhoto: FlickrPhoto? {
-        didSet {
-            // Grab photo here
-            
-        }
+    override func prepareForReuse() {
+        self.imageView.af_cancelImageRequest()
+        self.imageView.image = nil
+        super.prepareForReuse()
     }
-    
 }

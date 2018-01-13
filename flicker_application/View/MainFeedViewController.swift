@@ -7,30 +7,43 @@
 //
 
 import UIKit
-import AlamofireImage
 
 class MainFeedViewController: UIViewController {
     
-    var photos = [FlickrPhoto]()
-    fileprivate let itemsPerRow: CGFloat = 3
+    fileprivate let cellIdentifier = "FlikrCell"
+    fileprivate let itemsPerRow: CGFloat = 2
     fileprivate let sectionInsets = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
+    
+    fileprivate var photos = [FlickrPhoto](){
+        didSet {
+            self.collectionView.reloadData()
+        }
+    }
     
     @IBOutlet weak var searchBarTextField: UITextField!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        collectionView.dataSource = self
-        collectionView.delegate = self
+    var isLoading = false {
+        didSet {
+            if isLoading {
+                activityIndicator.startAnimating()
+            } else {
+                activityIndicator.stopAnimating()
+            }
+        }
     }
     
     @IBAction func searchButtonPressed(_ sender: Any) {
-        // Try to avoid force unwrapping, but due to time...
-        if searchBarTextField.text!.count > 0 {
-            FlikrService.returnPhotos(itemName: searchBarTextField.text!, completion: { (error, photos) in
-                self.photos = photos
-                self.collectionView.reloadData()
-            })
+
+        guard let text = searchBarTextField.text else { return }
+        self.isLoading = true
+        self.view.endEditing(true) // exit keyboard
+        
+        FlickrService.returnPhotos(itemName: text){[unowned self] error, photos in
+            if let error = error {print(error)}
+            self.photos = photos
+            self.isLoading = false
         }
     }
     
@@ -39,10 +52,8 @@ class MainFeedViewController: UIViewController {
 extension MainFeedViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout  {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier:"FlikrCell", for: indexPath) as! FlikrCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! FlikrCollectionViewCell
         let photo = photos[indexPath.row]
-        cell.flickrPhoto = photo
-        cell.backgroundColor = .green
         cell.imageView.imageFromUrl(urlString: photo.photoUrl)
         return cell
     }
@@ -51,6 +62,7 @@ extension MainFeedViewController: UICollectionViewDelegate, UICollectionViewData
         return photos.count
     }
     
+    // Inspired by https://www.raywenderlich.com/136159/uicollectionview-tutorial-getting-started
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
         let availableWidth = view.frame.width - paddingSpace
@@ -58,20 +70,16 @@ extension MainFeedViewController: UICollectionViewDelegate, UICollectionViewData
         return CGSize(width: widthPerItem, height: widthPerItem)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        insetForSectionAt section: Int) -> UIEdgeInsets {
         return sectionInsets
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return sectionInsets.left
     }
 }
 
-extension UIImageView {
-    public func imageFromUrl(urlString: URL) {
-        let request = URLRequest(url: urlString)
-        NSURLConnection.sendAsynchronousRequest(request, queue: .main) { (response, data, error) in
-             self.image = UIImage(data: data!)
-        }
-    }
-}
