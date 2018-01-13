@@ -87,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				C03D3FB3200400D500F15A2C /* FlickrPhoto.swift */,
-				C03D3FB52004022100F15A2C /* FlikerAPI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,7 +94,6 @@
 		C03D3FAE2004002A00F15A2C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C0E92D872003FEC70002A8F5 /* MainFeedViewController.swift */,
 				C03D3FB920040AA800F15A2C /* FlikrCollectionViewCell.swift */,
 			);
 			path = View;
@@ -105,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				C0E92D852003FEC70002A8F5 /* AppDelegate.swift */,
+				C0E92D872003FEC70002A8F5 /* MainFeedViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -127,12 +126,13 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		C03D3FB22004007C00F15A2C /* Service Layers */ = {
+		C03D3FB22004007C00F15A2C /* Servicers */ = {
 			isa = PBXGroup;
 			children = (
 				C03D3FB72004052900F15A2C /* FlickrService.swift */,
+				C03D3FB52004022100F15A2C /* FlikerAPI.swift */,
 			);
-			path = "Service Layers";
+			path = Servicers;
 			sourceTree = "<group>";
 		};
 		C03D3FBB20040C7300F15A2C /* Confidential */ = {
@@ -176,7 +176,7 @@
 				C03D3FB02004003D00F15A2C /* Support Files */,
 				C0B8FB6220095389008E66A9 /* Extentions */,
 				C03D3FBB20040C7300F15A2C /* Confidential */,
-				C03D3FB22004007C00F15A2C /* Service Layers */,
+				C03D3FB22004007C00F15A2C /* Servicers */,
 				C03D3FB12004004E00F15A2C /* Storyboards */,
 				C03D3FAF2004003300F15A2C /* Controller */,
 				C03D3FAE2004002A00F15A2C /* View */,
