@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		221ECF93708CDCB1D3B3D3B7 /* Pods_flicker_application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1727B62A7F9261E7F12CDA4 /* Pods_flicker_application.framework */; };
-		6E11EF6FBEBD1ADD44CEBD1D /* Pods_flicker_applicationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FFEF162C245A694C450F91 /* Pods_flicker_applicationTests.framework */; };
-		A8BBCC03C8EA518556DC87BA /* Pods_flicker_applicationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1DF2D2A685EF51866403 /* Pods_flicker_applicationUITests.framework */; };
 		C012EDA12009A33400AF5C1E /* FlickrQueues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C012EDA02009A33400AF5C1E /* FlickrQueues.swift */; };
 		C03D3FB4200400D500F15A2C /* FlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03D3FB3200400D500F15A2C /* FlickrPhoto.swift */; };
 		C03D3FB62004022100F15A2C /* FlikerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03D3FB52004022100F15A2C /* FlikerAPI.swift */; };
@@ -22,26 +20,7 @@
 		C0E92D8B2003FEC70002A8F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E92D892003FEC70002A8F5 /* Main.storyboard */; };
 		C0E92D8D2003FEC70002A8F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0E92D8C2003FEC70002A8F5 /* Assets.xcassets */; };
 		C0E92D902003FEC70002A8F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E92D8E2003FEC70002A8F5 /* LaunchScreen.storyboard */; };
-		C0E92D9B2003FEC70002A8F5 /* flicker_applicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E92D9A2003FEC70002A8F5 /* flicker_applicationTests.swift */; };
-		C0E92DA62003FEC70002A8F5 /* flicker_applicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E92DA52003FEC70002A8F5 /* flicker_applicationUITests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C0E92D972003FEC70002A8F5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C0E92D7A2003FEC70002A8F5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C0E92D812003FEC70002A8F5;
-			remoteInfo = flicker_application;
-		};
-		C0E92DA22003FEC70002A8F5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C0E92D7A2003FEC70002A8F5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C0E92D812003FEC70002A8F5;
-			remoteInfo = flicker_application;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2E1CC94F8D31C671039ED815 /* Pods-flicker_application.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flicker_application.debug.xcconfig"; path = "Pods/Target Support Files/Pods-flicker_application/Pods-flicker_application.debug.xcconfig"; sourceTree = "<group>"; };
@@ -64,12 +43,6 @@
 		C0E92D8C2003FEC70002A8F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0E92D8F2003FEC70002A8F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0E92D912003FEC70002A8F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0E92D962003FEC70002A8F5 /* flicker_applicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flicker_applicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0E92D9A2003FEC70002A8F5 /* flicker_applicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flicker_applicationTests.swift; sourceTree = "<group>"; };
-		C0E92D9C2003FEC70002A8F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0E92DA12003FEC70002A8F5 /* flicker_applicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flicker_applicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0E92DA52003FEC70002A8F5 /* flicker_applicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flicker_applicationUITests.swift; sourceTree = "<group>"; };
-		C0E92DA72003FEC70002A8F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6FFEF162C245A694C450F91 /* Pods_flicker_applicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flicker_applicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE5FE48967071522228E7DA /* Pods-flicker_application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flicker_application.release.xcconfig"; path = "Pods/Target Support Files/Pods-flicker_application/Pods-flicker_application.release.xcconfig"; sourceTree = "<group>"; };
 		E1727B62A7F9261E7F12CDA4 /* Pods_flicker_application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flicker_application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,22 +54,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				221ECF93708CDCB1D3B3D3B7 /* Pods_flicker_application.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0E92D932003FEC70002A8F5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6E11EF6FBEBD1ADD44CEBD1D /* Pods_flicker_applicationTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0E92D9E2003FEC70002A8F5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8BBCC03C8EA518556DC87BA /* Pods_flicker_applicationUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,8 +157,6 @@
 			children = (
 				C0E92D842003FEC70002A8F5 /* flicker_application */,
 				C03D3FB02004003D00F15A2C /* Support Files */,
-				C0E92D992003FEC70002A8F5 /* flicker_applicationTests */,
-				C0E92DA42003FEC70002A8F5 /* flicker_applicationUITests */,
 				C0E92D832003FEC70002A8F5 /* Products */,
 				B04874083F57CB5E26A249F1 /* Pods */,
 				B48DEC88B18FDD741C400BB8 /* Frameworks */,
@@ -212,8 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				C0E92D822003FEC70002A8F5 /* flicker_application.app */,
-				C0E92D962003FEC70002A8F5 /* flicker_applicationTests.xctest */,
-				C0E92DA12003FEC70002A8F5 /* flicker_applicationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,24 +183,6 @@
 				C03D3FAD2004001D00F15A2C /* Model */,
 			);
 			path = flicker_application;
-			sourceTree = "<group>";
-		};
-		C0E92D992003FEC70002A8F5 /* flicker_applicationTests */ = {
-			isa = PBXGroup;
-			children = (
-				C0E92D9A2003FEC70002A8F5 /* flicker_applicationTests.swift */,
-				C0E92D9C2003FEC70002A8F5 /* Info.plist */,
-			);
-			path = flicker_applicationTests;
-			sourceTree = "<group>";
-		};
-		C0E92DA42003FEC70002A8F5 /* flicker_applicationUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C0E92DA52003FEC70002A8F5 /* flicker_applicationUITests.swift */,
-				C0E92DA72003FEC70002A8F5 /* Info.plist */,
-			);
-			path = flicker_applicationUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,48 +208,6 @@
 			productReference = C0E92D822003FEC70002A8F5 /* flicker_application.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C0E92D952003FEC70002A8F5 /* flicker_applicationTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C0E92DAD2003FEC70002A8F5 /* Build configuration list for PBXNativeTarget "flicker_applicationTests" */;
-			buildPhases = (
-				C7684C335B13FE484B20D1D3 /* [CP] Check Pods Manifest.lock */,
-				C0E92D922003FEC70002A8F5 /* Sources */,
-				C0E92D932003FEC70002A8F5 /* Frameworks */,
-				C0E92D942003FEC70002A8F5 /* Resources */,
-				61156650C42ACB4D39FA34F6 /* [CP] Embed Pods Frameworks */,
-				EFDDD7357F40DC553A4DCE91 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C0E92D982003FEC70002A8F5 /* PBXTargetDependency */,
-			);
-			name = flicker_applicationTests;
-			productName = flicker_applicationTests;
-			productReference = C0E92D962003FEC70002A8F5 /* flicker_applicationTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C0E92DA02003FEC70002A8F5 /* flicker_applicationUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C0E92DB02003FEC70002A8F5 /* Build configuration list for PBXNativeTarget "flicker_applicationUITests" */;
-			buildPhases = (
-				EB23A06D21B8117C61060617 /* [CP] Check Pods Manifest.lock */,
-				C0E92D9D2003FEC70002A8F5 /* Sources */,
-				C0E92D9E2003FEC70002A8F5 /* Frameworks */,
-				C0E92D9F2003FEC70002A8F5 /* Resources */,
-				CCA5ACE87E60602E6427F7CE /* [CP] Embed Pods Frameworks */,
-				BBA81D6D4728669C3A8B1DB2 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C0E92DA32003FEC70002A8F5 /* PBXTargetDependency */,
-			);
-			name = flicker_applicationUITests;
-			productName = flicker_applicationUITests;
-			productReference = C0E92DA12003FEC70002A8F5 /* flicker_applicationUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -328,16 +221,6 @@
 					C0E92D812003FEC70002A8F5 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-					};
-					C0E92D952003FEC70002A8F5 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = C0E92D812003FEC70002A8F5;
-					};
-					C0E92DA02003FEC70002A8F5 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = C0E92D812003FEC70002A8F5;
 					};
 				};
 			};
@@ -355,8 +238,6 @@
 			projectRoot = "";
 			targets = (
 				C0E92D812003FEC70002A8F5 /* flicker_application */,
-				C0E92D952003FEC70002A8F5 /* flicker_applicationTests */,
-				C0E92DA02003FEC70002A8F5 /* flicker_applicationUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -369,20 +250,6 @@
 				C0E92D902003FEC70002A8F5 /* LaunchScreen.storyboard in Resources */,
 				C0E92D8D2003FEC70002A8F5 /* Assets.xcassets in Resources */,
 				C0E92D8B2003FEC70002A8F5 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0E92D942003FEC70002A8F5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0E92D9F2003FEC70002A8F5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,21 +271,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-flicker_application/Pods-flicker_application-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		61156650C42ACB4D39FA34F6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-flicker_applicationTests/Pods-flicker_applicationTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7E05896F68DDF8D068D3E0A5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -434,66 +286,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-flicker_application/Pods-flicker_application-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BBA81D6D4728669C3A8B1DB2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-flicker_applicationUITests/Pods-flicker_applicationUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C7684C335B13FE484B20D1D3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		CCA5ACE87E60602E6427F7CE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-flicker_applicationUITests/Pods-flicker_applicationUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EB23A06D21B8117C61060617 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		EE7AAC4F8644BD5CD0110606 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -507,21 +299,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		EFDDD7357F40DC553A4DCE91 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-flicker_applicationTests/Pods-flicker_applicationTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -543,36 +320,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C0E92D922003FEC70002A8F5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C0E92D9B2003FEC70002A8F5 /* flicker_applicationTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0E92D9D2003FEC70002A8F5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C0E92DA62003FEC70002A8F5 /* flicker_applicationUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C0E92D982003FEC70002A8F5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C0E92D812003FEC70002A8F5 /* flicker_application */;
-			targetProxy = C0E92D972003FEC70002A8F5 /* PBXContainerItemProxy */;
-		};
-		C0E92DA32003FEC70002A8F5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C0E92D812003FEC70002A8F5 /* flicker_application */;
-			targetProxy = C0E92DA22003FEC70002A8F5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C0E92D892003FEC70002A8F5 /* Main.storyboard */ = {
@@ -733,76 +481,6 @@
 			};
 			name = Release;
 		};
-		C0E92DAE2003FEC70002A8F5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 979D02E32C731F31CB007E90 /* Pods-flicker_applicationTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HGS8K6RYR7;
-				INFOPLIST_FILE = flicker_applicationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.marquavious.flicker-applicationTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flicker_application.app/flicker_application";
-			};
-			name = Debug;
-		};
-		C0E92DAF2003FEC70002A8F5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C6AD83679183411324164F0 /* Pods-flicker_applicationTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HGS8K6RYR7;
-				INFOPLIST_FILE = flicker_applicationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.marquavious.flicker-applicationTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flicker_application.app/flicker_application";
-			};
-			name = Release;
-		};
-		C0E92DB12003FEC70002A8F5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 979335E8C13C38012DD84C55 /* Pods-flicker_applicationUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HGS8K6RYR7;
-				INFOPLIST_FILE = flicker_applicationUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.marquavious.flicker-applicationUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = flicker_application;
-			};
-			name = Debug;
-		};
-		C0E92DB22003FEC70002A8F5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B848E2C2E8A95C9E9CB6F048 /* Pods-flicker_applicationUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HGS8K6RYR7;
-				INFOPLIST_FILE = flicker_applicationUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.marquavious.flicker-applicationUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = flicker_application;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -820,24 +498,6 @@
 			buildConfigurations = (
 				C0E92DAB2003FEC70002A8F5 /* Debug */,
 				C0E92DAC2003FEC70002A8F5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C0E92DAD2003FEC70002A8F5 /* Build configuration list for PBXNativeTarget "flicker_applicationTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C0E92DAE2003FEC70002A8F5 /* Debug */,
-				C0E92DAF2003FEC70002A8F5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C0E92DB02003FEC70002A8F5 /* Build configuration list for PBXNativeTarget "flicker_applicationUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C0E92DB12003FEC70002A8F5 /* Debug */,
-				C0E92DB22003FEC70002A8F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

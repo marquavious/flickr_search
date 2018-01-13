@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import Alamofire
 
 public enum FlickrParameters {
     static func returnSearchParams(searchValue:String) -> [String:Any]{
@@ -19,6 +19,12 @@ public enum FlickrParameters {
              "api_key": ApiKeys.flickrApiKey
         ]
     }
+    
+    static let header: HTTPHeaders = [
+        "api_key": ApiKeys.flickrApiKey
+    ]
+        
+    
 }
 
 public enum FlickrAPIDataModel {
