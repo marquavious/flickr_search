@@ -9,21 +9,23 @@
 import Foundation
 import Alamofire
 
-public enum FlickrParameters {
-    static func returnSearchParams(searchValue:String) -> [String:Any]{
-            return["text":searchValue,
+public enum FlickrAPIParameters {
+    static func searchParams(page: Int, searchValue: String, limit: Int) -> [String:Any] {
+            return [
+            "text":searchValue,
              "extras":"url_s",
              "method":"flickr.photos.search",
              "format":"json",
              "nojsoncallback":1,
+             "page": page,
+             "per_page": limit,
              "api_key": ApiKeys.flickrApiKey
-        ]
+            ]
     }
     
-    static let header: HTTPHeaders = [
+    static let headers: HTTPHeaders = [
         "api_key": ApiKeys.flickrApiKey
     ]
-        
     
 }
 

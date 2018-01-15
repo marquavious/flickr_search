@@ -12,6 +12,6 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     // Update this key at https://www.flickr.com/services/api/explore/flickr.photos.search 
-    let FlickrAPIKey = "10364d5f032a81f9ffdd29ac0d123c88"
+    let FlickrAPIKey = "739b660ea3629666d04b83ad0a19a381"
 }
 

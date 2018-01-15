@@ -7,13 +7,11 @@
 //
 
 import UIKit
-import AlamofireImage
-
 extension UIImageView {
     public func imageFromUrl(urlString: URL) {
         let request = URLRequest(url: urlString)
-        NSURLConnection.sendAsynchronousRequest(request, queue: .main) { (response, data, error) in
-            self.image = UIImage(data: data!)
-        }
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            DispatchQueue.main.async { self.image = UIImage(data: data!) }
+        }.resume()
     }
 }
